@@ -1,0 +1,52 @@
+2021-03-12T10:59:49.459Z INFO @wdio/local-runner: Run worker command: run
+2021-03-12T10:59:49.628Z WARN @wdio/mocha-framework: Unable to load spec files quite likely because they rely on `browser` object that is not fully initialised.
+`browser` object has only `capabilities` and some flags like `isMobile`.
+Helper files that use other `browser` commands have to be moved to `before` hook.
+Spec file(s): /Users/eagauss/WebstormProjects/wdiotests/test/specs/example.e2e.js
+Error: /Users/eagauss/WebstormProjects/wdiotests/test/specs/example.e2e.js:1
+import LoginPage from '../pageobjects/login.page';
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:915:16)
+    at Module._compile (internal/modules/cjs/loader.js:963:27)
+    at Module._compile (/Users/eagauss/WebstormProjects/wdiotests/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Object.newLoader [as .js] (/Users/eagauss/WebstormProjects/wdiotests/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.exports.requireOrImport (/Users/eagauss/WebstormProjects/wdiotests/node_modules/mocha/lib/esm-utils.js:42:12)
+2021-03-12T10:59:49.693Z INFO webdriver: Initiate new session using the WebDriver protocol
+2021-03-12T10:59:49.694Z INFO webdriver: [POST] http://localhost:9515/session
+2021-03-12T10:59:49.694Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: { browserName: 'chrome', acceptInsecureCerts: true },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: { browserName: 'chrome', acceptInsecureCerts: true }
+}
+2021-03-12T10:59:50.707Z ERROR @wdio/runner: Error: Unable to load spec files quite likely because they rely on `browser` object that is not fully initialised.
+`browser` object has only `capabilities` and some flags like `isMobile`.
+Helper files that use other `browser` commands have to be moved to `before` hook.
+Spec file(s): /Users/eagauss/WebstormProjects/wdiotests/test/specs/example.e2e.js
+Error: /Users/eagauss/WebstormProjects/wdiotests/test/specs/example.e2e.js:1
+import LoginPage from '../pageobjects/login.page';
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:915:16)
+    at Module._compile (internal/modules/cjs/loader.js:963:27)
+    at Module._compile (/Users/eagauss/WebstormProjects/wdiotests/node_modules/pirates/lib/index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Object.newLoader [as .js] (/Users/eagauss/WebstormProjects/wdiotests/node_modules/pirates/lib/index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.exports.requireOrImport (/Users/eagauss/WebstormProjects/wdiotests/node_modules/mocha/lib/esm-utils.js:42:12)
+    at MochaAdapter._loadFiles (/Users/eagauss/WebstormProjects/wdiotests/node_modules/@wdio/mocha-framework/build/index.js:85:35)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2021-03-12T10:59:50.708Z INFO webdriver: COMMAND deleteSession()
+2021-03-12T10:59:50.708Z INFO webdriver: [DELETE] http://localhost:9515/session/45bb6caac0b341b7254508f0779fa5d4
